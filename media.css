@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 360px) {
+  .intro__title { padding: 40px 0; }
+}
+
+@media (min-width: 392px) {
+  .intro__title { padding: 57.5px 0; }
+}
+
+@media (min-width: 562px) {
+  .intro__title { padding: 0; }
+}
+
+@media (min-width: 707px) {
+  .skills { margin-left: 170px; }
+}
+
+@media (min-width: 912px) {
+  .skills { margin-left: 25px; }
+  .intro, .skills { float: left; width: 38%; }
+}
+
+@media (min-width: 1145px) {  
+  .intro, .skills { float: left; width: 40%; }
+}

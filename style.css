@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 1.25em 'Ubuntu', sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.page-header, .page-footer {
+  background: #00a550;
+}
+
+.page-header h1 {
+  color: white;
+  font: 16vw 'Raleway', sans-serif; /* да, огромный */
+  text-align: center;
+}
+
+.blink {
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  from, { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.main {
+  margin: 25px;
+}
+
+.about {
+  padding-bottom: 50px;
+}
+
+.image {
+  float: left;
+}
+
+.userpic {
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.userpic img {
+  position: absolute;
+  transform: translate(20%, 20%) scale(1.5);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+
+p, ul {
+  padding-top: 15px;
+}
+
+.skills__list {
+  list-style: none;
+}
+
+li::before {
+  content: "👉 ";
+}
+
+.page-footer {
+  height: 50px;
+  margin-top: -50px;
+  position: relative;
+}
+
+.basement {
+  color: white;
+  padding: 10px;
+  height: 100%;
+}
+
+.basement span {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.fas {
+  font-size: 1.5em;
+}
