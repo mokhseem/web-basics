@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300;400&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font: 1.25em 'Ubuntu', sans-serif;
@@ -61,20 +58,70 @@ body {
   object-fit: cover;
 }
 
-.intro {
+.intro-about {
   margin-bottom: 20px;
 }
 
-p, ul {
+@media (min-width: 360px) {
+  .intro-about__title { padding: 40px 0; }
+}
+
+@media (min-width: 392px) {
+  .intro-about__title { padding: 57.5px 0; }
+}
+
+@media (min-width: 562px) {
+  .intro-about__title { padding: 0; }
+}
+
+@media (min-width: 707px) {
+  .skills { margin-left: 170px; }
+}
+
+@media (min-width: 912px) {
+  .skills { margin-left: 25px; }
+  .intro-about, .skills { float: left; width: 38%; }
+}
+
+@media (min-width: 1145px) {  
+  .intro-about, .skills { float: left; width: 40%; }
+}
+
+.intro-table {
+  text-align: center;
+}
+
+p {
   padding-top: 15px;
 }
 
 .skills__list {
+  padding-top: 15px;
   list-style: none;
 }
 
-li::before {
+.skills__item::before {
   content: "👉 ";
+}
+
+table {
+  border-spacing : 10px;
+  border-color : #00a550;
+  border-style: solid;
+  margin: 25px auto 75px;
+}
+
+td {
+  font-weight: 300;
+}
+
+.tbl-vol {
+  text-align: center;
+}
+
+.tbl-vol a {
+  color: black;
+  text-decoration: underline dotted;
 }
 
 .page-footer {
