@@ -29,8 +29,26 @@ header h1 {
   to { opacity: 0; }
 }
 
+nav {
+  text-align: center;
+  height: 30px;
+}
+
 ul {
   list-style: none;
+}
+
+.nav-list li {
+  display: inline;
+  padding: 0 5px;
+  color: white;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 0.9em;
 }
 
 main {
@@ -66,6 +84,11 @@ main {
   margin-bottom: 20px;
 }
 
+@media (max-width: 359px) {
+  .about-sect__image { float: none; }
+  .about-sect__intro-title { padding-top: 15px; }
+}
+
 @media (min-width: 360px) {
   .about-sect__intro-title { padding: 40px 0; }
 }
@@ -78,11 +101,13 @@ main {
   .about-sect__intro-title { padding: 0; }
 }
 
+@media (min-width: 707px) and (max-height: 414px){
+  main:not(.table-main) { height: 80vh; }
+}
+
 @media (min-width: 707px) {
   .about-sect__skills { margin-left: 170px; }
-  .video-sect, .form-sect { 
-    float: left;
-    width: 48%; }
+  .video-sect, .form-sect { float: left; width: 48%; }
   .form-sect { margin: 35px 0 0 25px; }
   .form-sect__intro { padding-bottom: 15px; }
 }
@@ -92,7 +117,11 @@ main {
   .about-sect__intro, .about-sect__skills { float: left; width: 38%; }
 }
 
-@media (min-width: 1145px) {  
+@media (min-width: 912px) and (min-height: 584px) {
+  main:not(.table-main, .about-main) { height: 65vh; }
+}
+
+@media (min-width: 1145px) { 
   .about-sect__intro, .about-sect__skills { float: left; width: 40%; }
 }
 
@@ -161,7 +190,7 @@ iframe {
 }
 
 form {
-  padding-top: 10px;
+  padding: 10px 0 50px;
 }
 
 label {
@@ -174,7 +203,7 @@ textarea {
 }
 
 textarea::placeholder {
-  font: 0.8em 'Ubuntu', sans-serif;
+  font: 0.9em 'Ubuntu', sans-serif;
   padding: 5px;
 }
 
