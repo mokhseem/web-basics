@@ -10,11 +10,11 @@ body {
   min-height: 100vh;
 }
 
-.page-header, .page-footer {
+header, footer {
   background: #00a550;
 }
 
-.page-header h1 {
+header h1 {
   color: white;
   font: 16vw 'Raleway', sans-serif; /* да, огромный */
   text-align: center;
@@ -29,15 +29,19 @@ body {
   to { opacity: 0; }
 }
 
-.main {
-  margin: 25px;
+ul {
+  list-style: none;
 }
 
-.about {
+main {
+  margin: 25px 25px 75px 25px;
+}
+
+.about-sect {
   padding-bottom: 50px;
 }
 
-.image {
+.about-sect__image {
   float: left;
 }
 
@@ -58,36 +62,41 @@ body {
   object-fit: cover;
 }
 
-.intro-about {
+.about-sect__intro {
   margin-bottom: 20px;
 }
 
 @media (min-width: 360px) {
-  .intro-about__title { padding: 40px 0; }
+  .about-sect__intro-title { padding: 40px 0; }
 }
 
 @media (min-width: 392px) {
-  .intro-about__title { padding: 57.5px 0; }
+  .about-sect__intro-title { padding: 57.5px 0; }
 }
 
 @media (min-width: 562px) {
-  .intro-about__title { padding: 0; }
+  .about-sect__intro-title { padding: 0; }
 }
 
 @media (min-width: 707px) {
-  .skills { margin-left: 170px; }
+  .about-sect__skills { margin-left: 170px; }
+  .video-sect, .form-sect { 
+    float: left;
+    width: 48%; }
+  .form-sect { margin: 35px 0 0 25px; }
+  .form-sect__intro { padding-bottom: 15px; }
 }
 
 @media (min-width: 912px) {
-  .skills { margin-left: 25px; }
-  .intro-about, .skills { float: left; width: 38%; }
+  .about-sect__skills { margin-left: 25px; }
+  .about-sect__intro, .about-sect__skills { float: left; width: 38%; }
 }
 
 @media (min-width: 1145px) {  
-  .intro-about, .skills { float: left; width: 40%; }
+  .about-sect__intro, .about-sect__skills { float: left; width: 40%; }
 }
 
-.intro-table {
+.library-sect__intro {
   text-align: center;
 }
 
@@ -95,12 +104,11 @@ p {
   padding-top: 15px;
 }
 
-.skills__list {
+.about-sect__skills-list {
   padding-top: 15px;
-  list-style: none;
 }
 
-.skills__item::before {
+.about-sect__skills-item::before {
   content: "👉 ";
 }
 
@@ -108,23 +116,97 @@ table {
   border-spacing : 10px;
   border-color : #00a550;
   border-style: solid;
-  margin: 25px auto 75px;
+  margin: 25px auto;
 }
 
 td {
   font-weight: 300;
 }
 
-.tbl-vol {
+.tbl-vol-row {
   text-align: center;
 }
 
-.tbl-vol a {
+.tbl-vol-row a {
   color: black;
   text-decoration: underline dotted;
 }
 
-.page-footer {
+.visually-hidden {
+  padding-top: 15px;
+  display: none;
+}
+
+.video-sect {
+  max-width: 656px;
+  margin-bottom: 25px;
+}
+
+iframe {
+  margin: 25px auto;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  padding-top: 10px;
+}
+
+label {
+  font-size: 0.8em;
+}
+
+textarea {
+  width: 100%;
+  max-width: 656px;
+}
+
+textarea::placeholder {
+  font: 0.8em 'Ubuntu', sans-serif;
+  padding: 5px;
+}
+
+button {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  margin-top: 15px;
+  font: 300 0.8em 'Ubuntu', sans-serif;
+  text-align: center;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease-in-out;
+  background-color: #00a550;
+  border-bottom: 2px solid #007539;
+  box-shadow: inset 0 -1px #007539;
+}
+
+button:active {
+  top: 1px;
+  box-shadow: none;
+}
+
+@media (min-width: 1145px) {  
+  .video-sect, textarea { max-width: none; }
+}
+
+footer {
   height: 50px;
   margin-top: -50px;
   position: relative;
