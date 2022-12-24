@@ -10,7 +10,6 @@
     <meta property="og:image" content="https://mokhseem.github.io/web-basics/img/kosja.jpg">
     <meta property="og:locale" content="ru_RU">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.css" integrity="sha512-Rf6s4uQZ2UqUIXVUuwxQwi0NLR1aNFD6v7GQDmtgL+tKdKOUEWHqJwzU9m8+pLgDnB02Ozh6F5SmvVN50J/Q+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Наша виабушная библиотека</title>
   </head>
   <body>
@@ -27,67 +26,64 @@
           </ul>
         </nav>
       </header>
-      <main class="table-main">
-        <section class="library-sect">
-          <div class="library-sect__intro">
-            <h2>Библиотека</h2>
-            <p>Наш верстальщик тот еще виабушник, и у него есть небольшая коллекция печатной манги.</p>
-          </div>
-          <table>
-            <tbody>
+      <main class="main">
+        <section class="library">
+          <h2 class="library__title">Библиотека</h2>
+          <p class="library__description">Наш верстальщик тот еще виабушник, и у него есть небольшая коллекция печатной манги.</p>
+          <table class="library__table">
+            <thead>
               <tr>
-                <th>Заглавие</th>
-                <th>Автор</th>
+                <th>Название</th>
+                <th>Мангака</th>
                 <th>Кол-во томов</th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
                 <td>Волчица и пряности</td>
                 <td>Кэйто Коумэ, Исуна Хасэкура</td>
-                <td class="tbl-vol-row">3 из 16</td>
+                <td>3 из 16</td>
               </tr>
               <tr>
                 <td>Голос далёкой звезды</td>
                 <td>Макото Синкай, Мидзу Сахара</td>
-                <td class="tbl-vol-row">
-                  <a href="https://ru.wikipedia.org/wiki/Ваншот" title="Однотомник в полном объёме без каких-либо продолжений">ваншот</a>
+                <td>
+                  <a href="https://ru.wikipedia.org/wiki/Ваншот" target="_blank" title="id est однотомник">ваншот</a>
                 </td>
               </tr>
               <tr>
                 <td>Нахальный принц и кошка-несмеяна</td>
                 <td>Окомэкэн, Сагара Со, Кантоку</td>
-                <td class="tbl-vol-row">8 из 8</td>
+                <td>8 из 8</td>
               </tr>
               <tr>
                 <td>Ну не может моя сестренка быть такой милой</td>
                 <td>Сакура Икэда, Цукаса Фусими</td>
-                <td class="tbl-vol-row">4 из 4</td>
+                <td>4 из 4</td>
               </tr>
               <tr>
                 <td>Рыцари &laquo;Сидонии&raquo;</td>
                 <td>Цутому Нихэй</td>
-                <td class="tbl-vol-row">3 из 15</td>
+                <td>3 из 15</td>
               </tr>
               <tr>
                 <td>Blame!</td>
                 <td>Цутому Нихэй</td>
-                <td class="tbl-vol-row">2 из 10</td>
+                <td>2 из 10</td>
               </tr>
               <tr>
                 <td>Нелюдь</td>
                 <td>Гамон Сакурай</td>
-                <td class="tbl-vol-row">3 из 17</td>
+                <td>3 из 17</td>
               </tr>
             </tbody>
           </table>
         </section>
       </main>
+      <footer>
+        <p>Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+        <p>Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+      </footer>
     </div>
-    <footer>
-      <div class="basement">
-        <i class="fas fa-dungeon"></i>
-        <i class="fas fa-dragon"></i>
-        <span>Все закрутки защищены</span>
-      </div>
-    </footer>
   </body>
 </html>

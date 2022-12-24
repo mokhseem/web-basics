@@ -10,7 +10,6 @@
     <meta property="og:image" content="https://mokhseem.github.io/web-basics/img/kosja.jpg">
     <meta property="og:locale" content="ru_RU">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.css" integrity="sha512-Rf6s4uQZ2UqUIXVUuwxQwi0NLR1aNFD6v7GQDmtgL+tKdKOUEWHqJwzU9m8+pLgDnB02Ozh6F5SmvVN50J/Q+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>О нас самих</title>
   </head>
   <body>
@@ -27,34 +26,34 @@
           </ul>
         </nav>
       </header>
-      <main class="about-main">
-        <section class="about-sect">        
-          <div class="about-sect__image">
-            <div class="userpic">
-              <img src="img/kosja.jpg" width="150" height="150" alt="Кошбка">
-            </div>
-          </div>
-          <div class="about-sect__intro">        
-            <h2 class="about-sect__intro-title">Пр-р-ривет!</h2>
-            <p>Меня зовут Кося, я живу с воннаби-верстальщиком, который не справившись с изучением питона, отчаялся стать тестировщиком, но вовремя свернул на верстальщика.</p>
-          </div>
-          <div class="about-sect__skills">
-            <h2 class="about-sect__skills-title">Что мы уже умеем?</h2>
-            <ul class="about-sect__skills-list">
-                <li class="about-sect__skills-item">То</li>
-                <li class="about-sect__skills-item">Сё</li>
-                <li class="about-sect__skills-item">Это</li>
-              </ul>
-          </div>
+      <main class="main about">
+        <section class="about-me">
+          <img class="about-me__img" src="img/kosja.jpg" width="150" height="150" alt="Кошбка">
+          <h2 class="about-me__title">Пр-р-ривет!</h2>
+          <p class="about-me__description">Меня зовут Кося, я живу с воннаби-верстальщиком, который не справившись с изучением питона, отчаялся стать тестировщиком, но вовремя свернул во фронтенд.</p>
+        </section>
+        <section class="about-skills">
+          <h2 class="about-skills__title">Что мы уже умеем?</h2>
+          <ul class="about-skills__list list">
+              <li class="list__item">верстать адаптивные HTML-страницы</li>
+              <li class="list__item">работать с PSD/Figma-макетами</li>
+              <li class="list__item">юзать Bootstrap, но лучше чистый CSS</li>
+              <li class="list__item">строить сетки на флексах, гридах, <del>таблицах</del></li>
+              <li class="list__item">кодить типичное на ванильном JS
+                <ul class="list-sublist">
+                  <li class="list-sublist__item">ваять попапы и фетчить данные</li>
+                  <li class="list-sublist__item">вешать (и снимать) обработчики</li>
+                  <li class="list-sublist__item">кромсать на модули</li>
+                </ul>
+              </li>
+              <li class="list__item">не выходить из vim лишний раз</li>
+            </ul>
         </section>
       </main>
+      <footer>
+        <p>Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+        <p>Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+      </footer>
     </div>
-    <footer>
-      <div class="basement">
-        <i class="fas fa-dungeon"></i>
-        <i class="fas fa-dragon"></i>
-        <span>Все закрутки защищены</span>
-      </div>
-    </footer>
   </body>
 </html>

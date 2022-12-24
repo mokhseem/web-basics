@@ -10,7 +10,6 @@
     <meta property="og:image" content="https://mokhseem.github.io/web-basics/img/kosja.jpg">
     <meta property="og:locale" content="ru_RU">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.css" integrity="sha512-Rf6s4uQZ2UqUIXVUuwxQwi0NLR1aNFD6v7GQDmtgL+tKdKOUEWHqJwzU9m8+pLgDnB02Ozh6F5SmvVN50J/Q+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Наше сумасбродство</title>
   </head>
   <body>
@@ -27,43 +26,36 @@
           </ul>
         </nav>
       </header>
-      <main class="video-main">
-        <section class="video-sect">
-          <div class="video-sect__intro">
-            <h2>Видео с котиком</h2>
-            <p>А иначе зачем все это?</p>
-          </div>
-          <div class="video-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RnGtl_tTXnM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+      <main class="main joy">
+        <section class="joy-content">
+          <h2 class="joy-content__title">Видео с котиком</h2>
+          <p class="joy-content__description">А иначе зачем все это?</p>
+          <iframe
+            class="joy-content__video"
+            src="https://www.youtube-nocookie.com/embed/RnGtl_tTXnM"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope"></iframe>
         </section>
-        <section class="form-sect">
-          <div class="form-sect__intro">
-            <h2 class="visually-hidden">Сопутствующий вопрос</h2>
-            <p>Что это было?</p>
-          </div>
-          <form method="get">
-            <ul>
-              <li>
-                <textarea rows="6" placeholder="Всему есть объяснение"></textarea>
-              </li>
-              <li>
-                <input type="checkbox" name="please-no" id="check" checked>
-                <label for="check">Никуда не отправлять</label></li>
-              <li>
-                <button type="submit">Отправить</button>
-              </li>
-            </ul>
+        <section class="joy-feedback">
+          <h2 class="joy-feedback__title">Сопутствующий вопрос</h2>
+          <p class="joy-feedback__description">Что это вообще было?</p>
+          <form class="joy-feedback__form form" method="get">
+            <textarea class="form__textarea" rows="6" placeholder="Поделитесь впечатлением"></textarea>
+            <div class="form__checkbox">
+              <input type="checkbox" name="addresseeless" id="check" checked>
+              <label for="check">Никуда не отправлять</label>
+            </div>
+            <button class="form__button" type="submit">
+              <span>Отправить</span>
+              <span>haha<br>no</span>
+            </button>
           </form>
         </section>
       </main>
+      <footer>
+        <p>Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+        <p>Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+      </footer>
     </div>
-    <footer>
-      <div class="basement">
-        <i class="fas fa-dungeon"></i>
-        <i class="fas fa-dragon"></i>
-        <span>Все закрутки защищены</span>
-      </div>
-    </footer>
   </body>
 </html>
