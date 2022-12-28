@@ -4,32 +4,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Кошка походила по клаве | video">
-    <meta property="og:description" content="Итоговая работа по основам HTML и CSS. Страница со встроенным видосиком и формой для комментария к нему.">
+    <meta property="og:title" content="Кросивое кринжовое">
+    <meta property="og:description" content="Итоговая работа по основам HTML и CSS &mdash; Ютуб-видосик и фидбек-форма">
     <meta property="og:url" content="https://mokhseem.github.io/web-basics/">
     <meta property="og:image" content="https://mokhseem.github.io/web-basics/img/kosja.jpg">
     <meta property="og:locale" content="ru_RU">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Наше сумасбродство</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Кросивое кринжовое</title>
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>&gt;Шап<span class="blink">_</span>очка</h1>
-        <nav>
-          <ul class="nav-list">
-            <li>&lbrace;</li>
-            <li><a href="index.html">about</a></li>
-            <li><a href="#">video</a></li>
-            <li><a href="table.html">table</a></li>
-            <li>&rbrace;</li>
+      <header class="page-header">
+        <h1 class="page-header__title">&gt;Шап<span class="blink">_</span>очка</h1>
+        <nav class="page-header__main-nav main-nav">
+          <ul class="main-nav__list list">
+            <li class="main-nav__item">&lbrace;</li>
+            <li class="main-nav__item">
+              <a class="main-nav__link link" href="index.html">about</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link link" href="library.html">library</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link link" href="#">joy</a>
+            </li>
+            <li class="main-nav__item">&rbrace;</li>
           </ul>
         </nav>
       </header>
       <main class="main joy">
         <section class="joy-content">
           <h2 class="joy-content__title">Видео с котиком</h2>
-          <p class="joy-content__description">А иначе зачем все это?</p>
+          <p class="joy-content__text text">А иначе зачем все это?</p>
           <iframe
             class="joy-content__video"
             src="https://www.youtube-nocookie.com/embed/RnGtl_tTXnM"
@@ -38,8 +45,8 @@
         </section>
         <section class="joy-feedback">
           <h2 class="joy-feedback__title">Сопутствующий вопрос</h2>
-          <p class="joy-feedback__description">Что это вообще было?</p>
-          <form class="joy-feedback__form form" method="get">
+          <p class="joy-feedback__text text">Что это вообще было?</p>
+          <form class="joy-feedback__form form" action="#" method="post">
             <textarea class="form__textarea" rows="6" placeholder="Поделитесь впечатлением"></textarea>
             <div class="form__checkbox">
               <input type="checkbox" name="addresseeless" id="check" checked>
@@ -52,9 +59,9 @@
           </form>
         </section>
       </main>
-      <footer>
-        <p>Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
-        <p>Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+      <footer class="page-footer">
+        <p class="page-footer__text marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+        <p class="page-footer__text marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
       </footer>
     </div>
   </body>

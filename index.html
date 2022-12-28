@@ -4,25 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Кошка походила по клаве | about">
-    <meta property="og:description" content="Итоговая работа по основам HTML и CSS. Домашняя страница с лаконичным био и впечатляющим списком умений.">
+    <meta property="og:title" content="Кросивое">
+    <meta property="og:description" content="Итоговая работа по основам HTML и CSS &mdash; Хоумпейдж с био и павлиньими скиллами">
     <meta property="og:url" content="https://mokhseem.github.io/web-basics/">
     <meta property="og:image" content="https://mokhseem.github.io/web-basics/img/kosja.jpg">
     <meta property="og:locale" content="ru_RU">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>О нас самих</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Кросивое</title>
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>&gt;Шап<span class="blink">_</span>очка</h1>
-        <nav>
-          <ul class="nav-list">
-            <li>&lbrace;</li>
-            <li><a href="#">about</a></li>
-            <li><a href="video.html">video</a></li>
-            <li><a href="table.html">table</a></li>
-            <li>&rbrace;</li>
+      <header class="page-header">
+        <h1 class="page-header__title">&gt;Шап<span class="blink">_</span>очка</h1>
+        <nav class="page-header__main-nav main-nav">
+          <ul class="main-nav__list list">
+            <li class="main-nav__item">&lbrace;</li>
+            <li class="main-nav__item">
+              <a class="main-nav__link link" href="#">about</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link link" href="library.html">library</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link link" href="joy.html">joy</a>
+            </li>
+            <li class="main-nav__item">&rbrace;</li>
           </ul>
         </nav>
       </header>
@@ -30,7 +37,7 @@
         <section class="about-me">
           <img class="about-me__img" src="img/kosja.jpg" width="150" height="150" alt="Кошбка">
           <h2 class="about-me__title">Пр-р-ривет!</h2>
-          <p class="about-me__description">Меня зовут Кося, я живу с воннаби-верстальщиком, который, не справившись с изучением питона, отчаялся стать тестировщиком, но вовремя свернул во фронтенд.</p>
+          <p class="about-me__text text">Меня зовут Кося, я живу с воннаби-верстальщиком, который, не справившись с изучением питона, отчаялся стать тестировщиком, но вовремя свернул во фронтенд.</p>
         </section>
         <section class="about-skills">
           <h2 class="about-skills__title">Что мы уже умеем?</h2>
@@ -40,19 +47,19 @@
               <li class="list__item">юзать Bootstrap, но лучше чистый CSS</li>
               <li class="list__item">строить сетки на флексах, гридах, <del>таблицах</del></li>
               <li class="list__item">кодить типичное на ванильном JS
-                <ul class="list-sublist">
+                <ul class="list-sublist list">
                   <li class="list-sublist__item">ваять попапы и фетчить данные</li>
                   <li class="list-sublist__item">вешать (и снимать) обработчики</li>
                   <li class="list-sublist__item">кромсать на модули</li>
                 </ul>
               </li>
-              <li class="list__item">не выходить из vim лишний раз</li>
+              <li class="list__item">не выходить из vim зря</li>
             </ul>
         </section>
       </main>
-      <footer>
-        <p>Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
-        <p>Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+      <footer class="page-footer">
+        <p class="page-footer__text marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+        <p class="page-footer__text marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
       </footer>
     </div>
   </body>

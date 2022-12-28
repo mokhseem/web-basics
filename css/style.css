@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu+Mono&family=Ubuntu:wght@300;400&display=swap");
 
 * {
   margin: 0;
@@ -12,13 +11,25 @@ body {
 }
 
 body {
-  font-size: 1.25em;
+  font: 1.25em "Ubuntu", sans-serif;
 }
 
-body,
-button,
-textarea::placeholder {
-  font-family: "Ubuntu", sans-serif;
+.text,
+.list li {
+  line-height: 1.4;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list-sublist {
+  padding-left: 30px;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -27,17 +38,17 @@ textarea::placeholder {
   min-height: 100%;
 }
 
-header *,
-footer {
+.page-header,
+.page-footer {
   color: #ffffff;
   background-color: #00a550;
 }
 
-header {
+.page-header {
   text-align: center;
 }
 
-header h1 {
+.page-header__title {
   font: 16vw "Raleway", sans-serif;
 }
 
@@ -55,33 +66,19 @@ header h1 {
   }
 }
 
-nav {
+.main-nav {
   height: 30px;
 }
 
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.nav-list li {
+.main-nav__item {
   display: inline;
   padding: 0 5px;
 }
 
-.nav-list a,
-textarea::placeholder,
-footer p {
-  font-size: 0.9em;
-}
-
-.nav-list a,
-.library__table td,
-footer p {
+.main-nav__link,
+.page-footer__text {
   font-weight: 300;
+  font-size: 0.9em;
 }
 
 .main {
@@ -91,7 +88,7 @@ footer p {
 .about,
 .joy {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 25px;
 }
 
@@ -111,16 +108,11 @@ footer p {
   align-items: center;
 }
 
-.about-me__description {
+.about-me__text {
   grid-column: 1 / -1;
 }
 
-.about-me__description,
-.about-skills__list li {
-  line-height: 1.4;
-}
-
-@media (min-width: 915px) {
+@media (min-width: 965px) {
   .about-me__img {
     grid-row: 1 / -1;
   }
@@ -129,8 +121,12 @@ footer p {
     display: block;
   }
 
-  .about-me__description {
+  .about-me__text {
     grid-column: auto;
+  }
+
+  .form__textarea {
+    height: 10em;
   }
 }
 
@@ -141,10 +137,6 @@ section:not(.about-me) p {
 
 .about-skills__list li::before {
   padding-right: 10px;
-}
-
-.about-skills .list-sublist {
-  padding-left: 30px;
 }
 
 .about-skills .list__item::before {
@@ -159,13 +151,12 @@ section:not(.about-me) p {
   content: "🤌";
 }
 
-.library :is(h2, p),
-.library__table td:last-child {
+.library :is(h2, p) {
   text-align: center;
 }
 
 .library__table {
-  margin: 25px auto 0;
+  margin: 20px auto 0;
   border-spacing: 10px;
   border: medium solid #00a550;
 }
@@ -174,14 +165,21 @@ section:not(.about-me) p {
   text-align: left;
 }
 
-.library__table a {
-  color: inherit;
+.library__table td {
+  font-weight: 300;
+}
+
+.library__table td:last-child {
+  text-align: center;
+}
+
+.library__table .link {
   text-decoration: underline dotted;
 }
 
 .joy-content__video,
 .joy-feedback__form {
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .joy-content__video {
@@ -190,8 +188,7 @@ section:not(.about-me) p {
 }
 
 .form__checkbox label,
-.form__textarea,
-.form__button {
+.form__textarea {
   font-size: 0.8em;
 }
 
@@ -200,6 +197,11 @@ section:not(.about-me) p {
   width: 100%;
   padding: 10px;
   font-family: "Ubuntu Mono", monospace;
+  resize: none;
+}
+
+.form__textarea::placeholder {
+  font: 0.9em "Ubuntu", sans-serif;
 }
 
 .form__button {
@@ -208,6 +210,7 @@ section:not(.about-me) p {
   margin-top: 15px;
   padding: 18px 18px 17px;
   overflow: hidden;
+  font: 0.8em "Ubuntu", sans-serif;
   background-color: #ffffff;
   border: medium solid #00a550;
   cursor: pointer;
@@ -259,18 +262,21 @@ section:not(.about-me) p {
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
-footer {
+.page-footer {
   display: flex;
   align-items: center;
   height: 50px;
   overflow: hidden;
 }
 
-footer p {
+.page-footer__text {
   flex-shrink: 0;
   min-width: 100%;
   padding: 0 15px;
   white-space: nowrap;
+}
+
+.marquee {
   animation: marquee 30s ease-in-out infinite;
 }
 
