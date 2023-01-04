@@ -13,31 +13,33 @@
     <link rel="icon" href="favicon.ico">
     <title>Кросивое</title>
   </head>
-  <body>
-    <div class="wrapper">
-      <header class="page-header">
-        <h1 class="page-header__title">&gt;Шап<span class="blink">_</span>очка</h1>
-        <nav class="page-header__main-nav main-nav">
-          <ul class="main-nav__list list">
-            <li class="main-nav__item">&lbrace;</li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="#">about</a>
+  <body class="page">
+    <div class="page__wrapper">
+      <header class="page__header page-header">
+        <h2 class="page-header__title header-title">
+          &gt;Шап<span class="header-title__text header-title__text--blink">_</span>очка
+        </h2>
+        <nav class="page__nav main-navigation">
+          <ul class="main-navigation__site-navigation site-navigation">
+            <li class="site-navigation__item">&lbrace;</li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">about</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="library.html">library</a>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="library.html">library</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="joy.html">joy</a>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="joy.html">joy</a>
             </li>
-            <li class="main-nav__item">&rbrace;</li>
+            <li class="site-navigation__item">&rbrace;</li>
           </ul>
         </nav>
       </header>
-      <main class="main about">
+      <main class="page__content about">
         <section class="about-me">
           <img class="about-me__img" src="img/kosja.jpg" width="150" height="150" alt="Кошбка">
           <h2 class="about-me__title">Пр-р-ривет!</h2>
-          <p class="about-me__text text">Меня зовут Кося, я живу с воннаби-верстальщиком, который, не справившись с изучением питона, отчаялся стать тестировщиком, но вовремя свернул во фронтенд.</p>
+          <p class="about-me__description">Меня зовут Кося, я живу с воннаби-верстальщиком, который, не справившись с изучением питона, отчаялся стать тестировщиком, но вовремя свернул во фронтенд.</p>
         </section>
         <section class="about-skills">
           <h2 class="about-skills__title">Что мы уже умеем?</h2>
@@ -53,13 +55,13 @@
                   <li class="list-sublist__item">кромсать на модули</li>
                 </ul>
               </li>
-              <li class="list__item">не выходить из vim зря</li>
+              <li class="list__item list__item--special">не выходить из vim зря</li>
             </ul>
         </section>
       </main>
-      <footer class="page-footer">
-        <p class="page-footer__text marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
-        <p class="page-footer__text marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+      <footer class="page__footer page-footer">
+        <p class="page-footer__disclaimer page-footer__disclaimer--marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+        <p class="page-footer__disclaimer page-footer__disclaimer--marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
       </footer>
     </div>
   </body>

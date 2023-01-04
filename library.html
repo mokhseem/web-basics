@@ -13,30 +13,32 @@
     <link rel="icon" href="favicon.ico">
     <title>Кросивое черченное</title>
   </head>
-  <body>
-    <div class="wrapper">
-      <header class="page-header">
-        <h1 class="page-header__title">&gt;Шап<span class="blink">_</span>очка</h1>
-        <nav class="page-header__main-nav main-nav">
-          <ul class="main-nav__list list">
-            <li class="main-nav__item">&lbrace;</li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="index.html">about</a>
+  <body class="page">
+    <div class="page__wrapper">
+      <header class="page__header page-header">
+        <h2 class="page-header__title header-title">
+          &gt;Шап<span class="header-title__text header-title__text--blink">_</span>очка
+        </h2>
+        <nav class="page__nav main-navigation">
+          <ul class="main-navigation__site-navigation site-navigation">
+            <li class="site-navigation__item">&lbrace;</li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="index.html">about</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="#">library</a>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">library</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="joy.html">joy</a>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="joy.html">joy</a>
             </li>
-            <li class="main-nav__item">&rbrace;</li>
+            <li class="site-navigation__item">&rbrace;</li>
           </ul>
         </nav>
       </header>
-      <main class="main">
-        <section class="library">
+      <main class="page__content">
+        <section class="library library--align-center">
           <h2 class="library__title">Библиотека</h2>
-          <p class="library__text text">Наш верстальщик тот еще виабушник, и у него есть небольшая коллекция печатной манги.</p>
+          <p class="library__description">Наш верстальщик тот еще виабушник, и у него есть небольшая коллекция печатной манги.</p>
           <table class="library__table">
             <thead>
               <tr>
@@ -55,7 +57,7 @@
                 <td>Голос далёкой звезды</td>
                 <td>Макото Синкай, Мидзу Сахара</td>
                 <td>
-                  <a class="link" href="https://ru.wikipedia.org/wiki/Ваншот" target="_blank" title="id est однотомник">ваншот</a>
+                  <a href="https://en.wikipedia.org/wiki/One-shot_(comics)" target="_blank" title="id est однотомник">ваншот</a>
                 </td>
               </tr>
               <tr>
@@ -87,9 +89,9 @@
           </table>
         </section>
       </main>
-      <footer class="page-footer">
-        <p class="page-footer__text marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
-        <p class="page-footer__text marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+      <footer class="page__footer page-footer">
+        <p class="page-footer__disclaimer page-footer__disclaimer--marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+        <p class="page-footer__disclaimer page-footer__disclaimer--marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
       </footer>
     </div>
   </body>
