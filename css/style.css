@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu+Mono&family=Ubuntu:wght@300;400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
 
 html,
@@ -19,8 +22,17 @@ a {
   text-decoration: none;
 }
 
+button,
+input,
+label,
+textarea {
+  font-size: 0.8em;
+  line-height: 1.15;
+  font-family: inherit;
+}
+
 .page {
-  font: 1.25em "Ubuntu", sans-serif;
+  font: 400 1.25em "Ubuntu", "Trebuchet MS", sans-serif;
 }
 
 .page__wrapper {
@@ -40,7 +52,9 @@ a {
 }
 
 .page-header__title {
-  font: 16vw "Raleway", sans-serif;
+  padding-top: 2rem;
+  font: 300 16vw "Comfortaa", "Helvetica", "Segoe UI", cursive;
+  line-height: 1.15;
 }
 
 .header-title__text--blink {
@@ -57,8 +71,16 @@ a {
   }
 }
 
-.site-navigation {
-  height: 30px;
+.main-navigation {
+  height: 1.6em;
+}
+
+.site-navigation:first-child::before {
+  content: "{";
+}
+
+.site-navigation:last-child::after {
+  content: "}";
 }
 
 .site-navigation__item {
@@ -73,12 +95,12 @@ a {
 }
 
 .page__content {
-  padding: 25px;
+  padding: 1.25em;
 }
 
 [class$="__description"],
 .list:not(.list-sublist) {
-  padding-top: 15px;
+  padding-top: 0.5em;
   line-height: 1.4;
 }
 
@@ -86,14 +108,14 @@ a {
 .joy {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 25px;
+  gap: 1.25em;
 }
 
 .about-me {
   display: grid;
   grid-template-columns: 150px 1fr;
   grid-template-rows: auto 2fr;
-  gap: 0 25px;
+  gap: 0 1.25em;
 }
 
 .about-me__img {
@@ -119,7 +141,7 @@ a {
   }
 
   .about-me__description {
-    grid-column: auto;
+    grid-column: initial;
   }
 
   .form__textarea {
@@ -128,7 +150,7 @@ a {
 }
 
 .list li::before {
-  padding-right: 10px;
+  padding-right: 0.5em;
 }
 
 .list__item::before {
@@ -140,7 +162,7 @@ a {
 }
 
 .list-sublist {
-  padding-left: 30px;
+  padding-left: 1.5em;
 }
 
 .list-sublist__item::before {
@@ -151,13 +173,16 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: -webkit-center;
-  text-align: -moz-center;
+  text-align: center;
+}
+
+:where(.library--align-center) .library__table {
+  text-align: initial;
 }
 
 .library__table {
-  margin-top: 20px;
-  border-spacing: 10px;
+  margin-top: 1em;
+  border-spacing: 0.5em;
   border: medium solid #00a550;
 }
 
@@ -179,7 +204,7 @@ a {
 
 .joy-itself__video,
 .joy-feedback__form {
-  padding-top: 20px;
+  padding-top: 1em;
 }
 
 .joy-itself__video {
@@ -187,27 +212,20 @@ a {
   aspect-ratio: 16 / 9;
 }
 
-.form__checkbox label,
-.form__textarea {
-  font-size: 0.8em;
-}
-
 .form__textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
-  font-family: "Ubuntu Mono", monospace;
+  padding: 0.5em;
+  color: #2f4f4f;
   resize: none;
 }
 
 .form__textarea::placeholder {
-  font: 0.9em "Ubuntu", sans-serif;
+  font-size: 0.9em;
 }
 
 .button {
-  padding: 1rem;
-  font-size: 0.8em;
-  font-family: inherit;
+  padding: 1em;
   background-color: transparent;
   border: medium solid #00a550;
   cursor: pointer;
@@ -219,7 +237,7 @@ a {
 .form__button {
   position: relative;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 0.75em;
   overflow: hidden;
 }
 
@@ -234,7 +252,7 @@ a {
   inset: 50% auto 0 50%;
   z-index: 100;
   display: block;
-  height: 14px;
+  height: 0.9em;
   line-height: 1;
   color: #ffffff;
   transform: translateY(225%) translateX(-50%);
@@ -269,14 +287,14 @@ a {
 .page-footer {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 2.4em;
   overflow: hidden;
 }
 
 .page-footer__disclaimer {
   flex-shrink: 0;
   min-width: 100%;
-  padding: 0 15px;
+  padding: 0 0.5em;
   white-space: nowrap;
 }
 
@@ -292,4 +310,17 @@ a {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
