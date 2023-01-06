@@ -9,6 +9,10 @@
     <meta property="og:url" content="https://mokhseem.github.io/web-basics/">
     <meta property="og:image" content="https://mokhseem.github.io/web-basics/img/kosja.jpg">
     <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Ubuntu:wght@300;400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Ubuntu:wght@300;400&display=swap" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <title>Кросивое черченное</title>
@@ -17,11 +21,10 @@
     <div class="page__wrapper">
       <header class="page__header page-header">
         <h2 class="page-header__title header-title">
-          &gt;Шап<span class="header-title__text header-title__text--blink">_</span>очка
+          <span aria-hidden="true" class="header-title__text">&gt;</span>Шап<span aria-hidden="true" class="header-title__text header-title__text--blink">_</span>очка
         </h2>
         <nav class="page__nav main-navigation">
           <ul class="main-navigation__site-navigation site-navigation">
-            <li class="site-navigation__item">&lbrace;</li>
             <li class="site-navigation__item">
               <a class="site-navigation__link" href="index.html">about</a>
             </li>
@@ -31,11 +34,11 @@
             <li class="site-navigation__item">
               <a class="site-navigation__link" href="joy.html">joy</a>
             </li>
-            <li class="site-navigation__item">&rbrace;</li>
           </ul>
         </nav>
       </header>
       <main class="page__content">
+        <h1 class="visually-hidden">Наша виабушество</h1>
         <section class="library library--align-center">
           <h2 class="library__title">Библиотека</h2>
           <p class="library__description">Наш верстальщик тот еще виабушник, и у него есть небольшая коллекция печатной манги.</p>
@@ -91,7 +94,7 @@
       </main>
       <footer class="page__footer page-footer">
         <p class="page-footer__disclaimer page-footer__disclaimer--marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
-        <p class="page-footer__disclaimer page-footer__disclaimer--marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
+        <p aria-hidden="true" class="page-footer__disclaimer page-footer__disclaimer--marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
       </footer>
     </div>
   </body>
