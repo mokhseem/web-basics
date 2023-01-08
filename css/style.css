@@ -123,7 +123,7 @@ textarea {
   gap: 0 1.25em;
 }
 
-.about-me__img {
+.about-me__img img {
   border-radius: 50%;
 }
 
