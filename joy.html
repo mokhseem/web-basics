@@ -16,27 +16,12 @@
     <meta property="og:description" content="Итоговая работа по основам HTML и CSS: Ютуб-видосик и фидбек-форма">
     <meta property="og:image" content="https://mokhseem.github.io/web-basics/img/kosja.jpg">
     <link rel="stylesheet" href="css/style.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
   </head>
   <body class="page">
     <div class="page__wrapper">
-      <header class="page__header page-header">
-        <h2 class="page-header__title header-title">
-          <span aria-hidden="true" class="header-title__text">&gt;</span>Шап<span aria-hidden="true" class="header-title__text header-title__text--blink">_</span>очка
-        </h2>
-        <nav class="page__nav main-navigation">
-          <ul class="main-navigation__site-navigation site-navigation">
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="index.html">about</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="library.html">library</a>
-            </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">joy</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <header-component></header-component>
       <main class="page__content joy">
         <h1 class="visually-hidden">Наше сумасбродство</h1>
         <section class="joy-itself">
@@ -65,10 +50,7 @@
           </form>
         </section>
       </main>
-      <footer class="page__footer page-footer">
-        <p class="page-footer__disclaimer page-footer__disclaimer--marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
-        <p aria-hidden="true" class="page-footer__disclaimer page-footer__disclaimer--marquee">Данный веб-сайт (интернет-ресурс) создан в рамках курса &laquo;Веб-разработчик 20.35&raquo; ОЦ КПиД Университета ИТМО и распространен в ознакомительных целях ради кеков других веб-разработчиков и (или) рекрутеров</p>
-      </footer>
+      <footer-component></footer-component>
     </div>
   </body>
 </html>
