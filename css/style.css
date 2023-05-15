@@ -283,9 +283,15 @@ textarea {
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
+footer-component {
+  display: flex;
+}
+
 .page-footer {
   display: flex;
+  flex-grow: 1;
   align-items: center;
+  width: 100vw;
   height: 2.4em;
   overflow: hidden;
 }
