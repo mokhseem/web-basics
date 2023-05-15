@@ -102,7 +102,6 @@ textarea {
 .about,
 .joy {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: min-content;
   gap: 1.25em;
 }
@@ -124,6 +123,13 @@ textarea {
 
 .about-me__description {
   grid-column: 1 / -1;
+}
+
+@media (min-width: 400px) {
+  .about,
+  .joy {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
 }
 
 @media (min-width: 965px) {
